@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruteria</title>
+    <!-- font awesome icons -->
+    <link rel = "stylesheet" href = "node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "node_modules/normalize.css/normalize.css">
+    <link rel = "stylesheet" href = "assets/css/main.css">
+    <link rel = "stylesheet" href = "assets/css/utility.css">
+</head>
+<body>
+    <!-- header -->
+    <header class = "header text-light">
+        <div class ="header2">
+        <div class = "container flex">
+            <!-- navbar starts -->
+            <nav class = "navbar flex">
+                <div class = "brand-and-toggler flex">
+                    <a href = "index.html" class = "navbar-brand">
+                        <img src = "assets/images/logo.png" alt = "site logo">
+                    </a>
+                    <button type = "button" id = "navbar-show-btn">
+                        <i data-feather = "menu" class = "feather-32"></i>
+                    </button>
+                </div>
+
+                <div class = "navbar-collapse bg-orange">
+                    <button type = "button" id = "navbar-hide-btn">
+                        <i data-feather = "x-circle" class = "feather-32"></i>
+                    </button>
+                    <ul class = "navbar-nav text-uppercase">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link text-light">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "productos.html" class = "nav-link text-light">productos</a>
+                        </li>
+                        <!-- <li class = "nav-item">
+                            <a href = receta.html" class = "nav-link text-light">recetas</a>
+                        </li>  -->
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link text-light">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- navbar ends -->
+
+        </div>
+        </div>
+    </header> 
+    <!-- header ends -->
+
+    <main>
+ 
+<!--
+        <section class="contact-section text-center py-9 bg-light" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-dark">Contáctanos</h2>
+                    <p class="text text-dark">Estamos aquí para responder a tus preguntas y comentarios.</p>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="tucorreo@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-orange">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    -->
+        <!-- ... (código existente) ... -->
+
+<section class="contact-section text-center py-9 bg-light" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="text-dark">Contáctanos</h2>
+            <p class="text text-dark">Estamos aquí para responder a tus preguntas y comentarios.</p>
+        </div>
+        <!-- Formulario de contacto utilizando clases de CSS -->
+        <form class="contact-form" id="fruits-form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="tucorreo@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="fruit-package">Paquete de Frutas:</label>
+                <select id="fruit-package" name="fruit-package" class="form-control">
+                    <option value="basic">Paquete1</option>
+                    <option value="premium">Paquete2</option>
+                    <option value="premium">Paquete3</option>
+                    <!-- Agrega más opciones según tus paquetes -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="specific-fruits">Frutas Específicas:</label>
+                <input type="text" id="specific-fruits" name="specific-fruits" class="form-control" placeholder="Escribe las frutas deseadas">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-orange">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<!-- ... (código existente) ... -->
+
+
+        <!-- newsletter section starts -->
+        <section class = "text-center py-9 bg-orange" id = "newsletter">
+            <div class = "container">
+                <div class = "section-title">
+                    <h2 class = "text-light">No te pierdas nuestras ofertas</h2>
+                    <p class = "text text-light">Actualizaciones sobre nuevos productos y promociones.</p>
+                </div>
+                <form class = "newsletter-form">
+                    <div class = "form-group flex">
+                        <input type = "email" class = "form-control" placeholder="Your Email">
+                        <button type = "submit" class = "subscribe-btn text-uppercase text-light bg-dark">suscribete</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- newsletter section ends -->
+    </main>
+
+    
+    
+    <footer class = "bg-dark text-light" id = "footer">
+        <div class = "container">
+            <div class = "footer-content grid text-center">
+                <div class = "footer-item-1">
+                    <h2 class = "footer-item-title fw-5">Fruteria</h2>
+                    <p class = "text">Nos enorgullece ofrecer la frescura de la naturaleza directamente a tu mesa. Nuestro compromiso es proporcionarte las frutas y verduras más sabrosas y nutritivas, cuidadosamente seleccionadas para brindarte una experiencia gastronómica saludable y deliciosa. </p>
+                    <ul class = "social-icons flex">
+                        <li>
+                            <a href = "#" class = "bg-light text-dark text-center">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "bg-light text-dark text-center">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "bg-light text-dark text-center">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "bg-light text-dark text-center">
+                                <i class = "fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item-2">
+                    <h2 class = "footer-item-title fw-5">About</h2>
+                    <ul class = "footer-links">
+                        <li>
+                            <a href = "#" class = "text-light">History</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Our Team</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Brand Guidelines</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Terms & Condition</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item-3">
+                    <h2 class = "footer-item-title fw-5">Services</h2>
+                    <ul class = "footer-links">
+                        <li>
+                            <a href = "#" class = "text-light">How to Order</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Our Product</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Order Status</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Promo</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Payment Method</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item-4">
+                    <h2 class = "footer-item-title fw-5">Other</h2>
+                    <ul class = "footer-links">
+                        <li>
+                            <a href = "#" class = "text-light">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Help</a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-light">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- font awesome -->
+    <script src = "node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <!-- feather icons -->
+    <script src = "node_modules/feather-icons/dist/feather.js"></script>
+    <!-- jquery -->
+    <script src = "node_modules/jquery/dist/jquery.js"></script>
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>
